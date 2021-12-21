@@ -1,0 +1,17 @@
+
+
+name(carlos).
+name(juana).
+name(juan).
+
+
+
+
+date(22, septiembre, 22).
+date(carlos).
+date(carlos).
+
+
+
+paradigmadocs(name, date, Sout):- 
+   EsNombre(name), esFecha (date), esOut (Sout).
