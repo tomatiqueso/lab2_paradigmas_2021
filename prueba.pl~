@@ -1,0 +1,42 @@
+
+esDiaValido(Dia,Mes ):-
+     Mes = 1 , Dia >= 1, Dia =< 31;
+     Mes = 2 , Dia >= 1, Dia =< 29;
+     Mes = 3 , Dia >= 1, Dia =< 31;
+     Mes = 4 , Dia >= 1, Dia =< 30;
+     Mes = 5 , Dia >= 1, Dia =< 31;
+     Mes = 6 , Dia >= 1, Dia =< 30;
+     Mes = 7 , Dia >= 1, Dia =< 31;
+     Mes = 8 , Dia >= 1, Dia =< 31;
+     Mes = 9 , Dia >= 1, Dia =< 30;
+     Mes = 10, Dia >= 1, Dia =< 31;
+     Mes = 11, Dia >= 1, Dia =< 30;
+     Mes = 12, Dia >= 1, Dia =< 31.
+
+
+
+
+date(Dia, Mes, Año, [Dia, Mes, Año]):- number(D),number(M),number(Y), D = [Dia, Mes, Año].
+
+
+ /*
+date(20, 12, 2015, D1).
+date(1, 12, 2021, D2).
+date(3, 12, 2021, D3).
+*/
+
+
+% TDA paradigmaDocs , corresponde a la representacion de un editor de documentos
+
+
+paradigmaDocs(Name, D, PD):- date(_,_,_,D).
+
+
+
+
+
+%paradigmaDocs("google docs", D1, PD1).
+ /*   paradigmaDocsRegister(PD1, D2, "vflores", "hola123", PD2).
+    paradigmaDocsRegister(PD2, D2, "crios", "qwert", PD3).
+    paradigmaDocsRegister(PD3, D3, "alopez", "asdfg", PD4).
+*/
